@@ -2,55 +2,112 @@
 <head>
     <title>Youtube</title>
     <style>
+        p {
+            font-family: Roboto, Arial;
+            margin-top:0;
+            margin-bottom:0;
+        }
         .thumbnail {
             width: 300px;
         }
         .search-bar {
-            display: block
-            font-size: 20px;
-           
+            display: block;
+
         }
         .video-title {
+            margin-top: 0;
             font-size: 14px;
-            font-weight: bold;
+            font-weight: 500;
+            line-height: 20px;
+            margin-bottom: 12px;
+
         }
+       
         .video-preview {
             display: inline-block;
             vertical-align: top;
             margin-right: 15px;
 
         }
-        
+        .channel-picture {
+            display:inline-block;
+            width: 50px;
+            vertical-align: top;
 
+        }
+        .video-info{
+            display: inline-block;
+            width: 200px;
+
+        }
+        .profile-picture {
+            width: 40px;
+            border-radius: 50px;
+
+        }
+        .thumbnail-row {
+            margin-bottom: 12px;
+        }
+        .video-author,
+        .video-stats {
+            font-size: 12px;
+            color: rgb(96, 96, 96);
+
+        }
+        .video-author{
+            margin-bottom: 4px;
+        }
+        
     </style>
 </head>
 <body>
      <input class="Search-bar" type="text" placeholder="search">
     
      <div class="video-preview">
-    <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
-    <p class="video-title">
-        Talking Tech and AI with Google CEO Sundar Pichar!
-    </p>
-    <P class="video-author">
-        Marques Brownlee 
-    </P>
-    <P class="video-stats">
-        3.4M views 6 months ago
-    </P>
+        <div class="thumbnail-row">
+             <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+
+        </div>
+        <div>
+            <div class="channel-picture"> <img class="profile-picture" src="channel-pictures/channel-1.jpeg"></div>
+            <div class="video-info">
+                 <p class="video-title">
+                  Talking Tech and AI with Google CEO Sundar Pichar!
+                 </p>
+                 <P class="video-author">
+                  Marques Brownlee 
+                 </P>
+                  <P class="video-stats">
+                  3.4M views 6 months ago
+                 </P>
+     </div>
+           
+            
+     </div>
+   
     </div>
 
-    <div class="video-preview">
-    <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
-    <p class="video-title">
-        Try Not To Laugh Challenge #9
-    </p>
-    <P class="video-author">
-        Markiplier
-    </P>
-    <P class="video-stats">
-        19M views 4 years ago
-    </P>
-    </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+             <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
 
+        </div>
+        <div>
+            <div class="channel-picture"> <img class="profile-picture" src="channel-pictures/channel-2.jpeg"></div>
+            <div class="video-info">
+                 <p class="video-title">
+                    Try not to Laugh Challenge #9
+                 </p>
+                 <P class="video-author">
+                  Markiplier 
+                 </P>
+                  <P class="video-stats">
+                  19M views 4 years ago
+                 </P>
+     </div>
+           
+            
+     </div>
+   
+    </div>
 </body>
